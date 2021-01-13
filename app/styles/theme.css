@@ -1,0 +1,220 @@
+
+/* Graph Components */
+#graphComponent {
+    background-color: #3c4253;
+}
+#graphOverviewComponent {
+    background-color: #53596b;
+}
+
+/* Viewport Rectangle in Overview */
+.yfiles-overview-viewport-template {
+    fill: #e8cb8a;
+    stroke: #e8cb8a;
+    stroke-width: 2px;
+}
+#overviewComponent .yfiles-handle-resize-template {
+    fill: #e8cb8a;
+    stroke: #e8cb8a;
+}
+
+/* Resize Handles */
+.yfiles-handle-resize-template {
+    fill: currentColor; /* Use SVG currentColor to allow different colors for individual handles*/
+    stroke: currentColor; /* Use SVG currentColor to allow different colors for individual handles*/
+}
+.yfiles-handle {
+    color: #e8cb87;
+}
+.yfiles-handle-north.yfiles-handle-east,
+.yfiles-handle-north.yfiles-handle-west,
+.yfiles-handle-south.yfiles-handle-east,
+.yfiles-handle-south.yfiles-handle-west {
+    color: #b96069;
+}
+
+/* Port Handle */
+.yfiles-handle-move-template {
+    fill: #b96069;
+}
+
+/* Marquee Selection Rectangle */
+.yfiles-marquee-rect-template {
+    fill: #a5be8a;
+    stroke: #a5be8a;
+    stroke-width: 2px;
+}
+
+/* Selection */
+.yfiles-node-selection-template,
+.yfiles-edge-selection-template,
+.yfiles-label-selection-template,
+.yfiles-port-selection-template {
+    stroke: rgba(185, 96, 105, 0);
+    stroke-width: 4px;
+    stroke-linejoin: round;
+}
+
+/* Focus */
+.yfiles-node-focus-template,
+.yfiles-edge-focus-template,
+.yfiles-label-focus-template,
+.yfiles-port-focus-template {
+    stroke: #e8cb87;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+}
+
+/* Highlights */
+.yfiles-node-highlight-template,
+.yfiles-edge-highlight-template,
+.yfiles-label-highlight-template,
+.yfiles-port-highlight-template {
+    stroke: #85be8a;
+    stroke-linejoin: round;
+}
+.yfiles-node-highlight-middle-template {
+    stroke: #3c4253;
+}
+
+/* Label Candidates */
+.yfiles-label-position-highlight-template {
+    stroke: #8fc0d1;
+}
+.yfiles-label-position-candidate-template {
+    stroke: #85a1c2;
+}
+
+/* Port Candidates */
+.yfiles-port-candidate-template.yfiles-valid .yfiles-outer-rect {
+    fill: #85be8a;
+}
+.yfiles-port-candidate-template.yfiles-valid .yfiles-inner-rect {
+    fill: #85be8a;
+}
+.yfiles-port-candidate-template.yfiles-valid .yfiles-corner-path {
+    stroke: transparent;
+}
+
+/* Snap-Lines */
+.yfiles-snap-line {
+    stroke: #e8cb87;
+    stroke-width: 2px;
+}
+
+/* Scrollbars */
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-horizontal,
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-horizontal div,
+.yfiles-canvascomponent .yfiles-scrollbar-range.yfiles-scrollbar-range-horizontal .yfiles-scrollbar-slider,
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-scrollbar-range.yfiles-scrollbar-range-horizontal {
+    height: 10px;
+}
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-vertical,
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-vertical div,
+.yfiles-canvascomponent .yfiles-scrollbar-range.yfiles-scrollbar-range-vertical .yfiles-scrollbar-slider,
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-scrollbar-range.yfiles-scrollbar-range-vertical {
+    width: 10px;
+}
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-horizontal,
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-vertical {
+    background-color: transparent;
+}
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-horizontal:hover,
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-vertical:hover,
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-horizontal:active,
+.yfiles-canvascomponent .yfiles-scrollbar.yfiles-scrollbar-vertical:active {
+    background-color: #282e4044;
+}
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-scrollbar-slider-content {
+    background-color: #282e40;
+    opacity: 1;
+}
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-button {
+    width: 10px;
+    height: 10px;
+}
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-button.yfiles-button-left {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxMCI+PHBhdGggZD0iTTUgNSBMMTAgMSBMMTAgOSBaIi8+PC9zdmc+DQo=);
+}
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-button.yfiles-button-right {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxMCI+PHBhdGggZD0iTTUgMSBMMTAgNSBMNSA5IFoiLz48L3N2Zz4NCg==);
+}
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-button.yfiles-button-down {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNSI+PHBhdGggZD0iTTEgNSBMOSA1IEw1IDEwIFoiLz48L3N2Zz4NCg==);
+}
+.yfiles-canvascomponent .yfiles-scrollbar .yfiles-button.yfiles-button-up {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxNSI+PHBhdGggZD0iTTEgMTAgTDUgNSBMOSAxMCBaIi8+PC9zdmc+DQo=);
+}
+
+/* Tooltips */
+.yfiles-tooltip {
+    background-color: #85a1c2;
+    color: white;
+    border-color: #85a1c2;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 5px;
+    font-weight: bold;
+}
+.yfiles-tooltip-entering {
+    transition: opacity 0.2s ease-in;
+}
+.yfiles-tooltip-enter {
+    opacity: 0;
+}
+.yfiles-tooltip-enter-to {
+    opacity: 1;
+}
+.yfiles-tooltip-leaving {
+    transition: opacity 0.2s ease-out;
+}
+.yfiles-tooltip-leave {
+    opacity: 1;
+}
+.yfiles-tooltip-leave-to {
+    opacity: 0;
+}
+
+/* Label Editor*/
+@keyframes scaleAnimation {
+    from { opacity: 0; transform: scale(0); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeAnimation {
+    from { opacity: 0;  }
+    to { opacity: 1;   }
+}
+.yfiles-canvascomponent .yfiles-labeleditbox-container {
+    background-color: #282e40;
+    border-color: #85a1c2;
+}
+
+.yfiles-canvascomponent .yfiles-labeleditbox {
+    font-family: sans-serif;
+    font-size: 12pt;
+    color: lightgrey;
+}
+
+.yfiles-canvascomponent .yfiles-labeleditbox::selection {
+    background: #85a1c2;
+    color: #fff;
+}
+
+.yfiles-labeleditbox-container-entering {
+    animation: scaleAnimation 0.3s ease-in;
+}
+.yfiles-labeleditbox-container-leaving {
+    animation: scaleAnimation reverse 0.3s ease-out;
+}
+.css-edge-style{
+    stroke: #ffffff99;
+    animation: fadeAnimation 5s;
+}
+.css-node-style{
+    animation: fadeAnimation 5s;
+    fill: cornflowerblue;
+}
+.css-edge-style-arrow{
+    fill:#ffffff99;
+    stroke:#ffffff99;
+}
